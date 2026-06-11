@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #d81515,
+    #d84a4a,
+    #d6b3b3
+  );
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.2) 2px, transparent 2px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+}
+
+.left-content {
+  width: 45%;
+}
+
+.left-content h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 7rem;
+  line-height: 1;
+}
+
+.left-content p {
+  margin-top: 20px;
+  max-width: 450px;
+}
+
+.buy-btn {
+  margin-top: 30px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: "Permanent Marker", cursive;
+}
+
+.swords {
+  margin-top: 10px;
+}
+
+.sword {
+  width: 100px;      /* Adjust size as needed */
+  height: auto;
+  display: block;
+}
+
+.right-content {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: rgba(255, 0, 0, 0.7);
+  border-radius: 50%;
+}
+
+.ninja {
+  width: 420px;
+  position: relative;
+  z-index: 2;
+}
+
+.japanese {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.ticker {
+  width: 100%;
+  background: #ff0000;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.about-story {
+  background: #f5f1eb;
+  padding: 80px 50px;
+  color: #222;
+}
+
+.about-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 80px;
+}
+
+.about-section h2 {
+  font-size: 4rem;
+  font-family: "Permanent Marker", cursive;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.story-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.story-image {
+  flex: 1;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-content h2 {
+  color: red;
+  font-size: 4rem;
+  font-family: "Permanent Marker", cursive;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.divider-image {
+  width: 60%;      /* Reduce size */
+  max-width: 700px;
+  height: auto;
+  display: block;
+}
+
+/* ========================= */
+/* ROADMAP */
+/* ========================= */
+
+.roadmap-section {
+  background: #ff0000;
+  padding: 80px 60px;
+  color: white;
+}
+
+.roadmap-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roadmap-left {
+  width: 55%;
+}
+
+.roadmap-step {
+  margin-bottom: 50px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.roadmap-right {
+  width: 40%;
+  text-align: center;
+}
+
+.roadmap-right h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.torii-image {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* ========================= */
+/* TOKENOMICS */
+/* ========================= */
+
+.tokenomics-section {
+  background: #f5f1eb;
+  padding: 80px 60px;
+}
+
+.tokenomics-section h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
+  color: red;
+  margin-bottom: 50px;
+}
+
+.tokenomics-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tokenomics-ninja {
+  width: 40%;
+}
+
+.tokenomics-ninja1 img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.tokenomics-cards {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.token-card {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    #8b8b9c,
+    #55556a
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+
+.token-card h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.token-card span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ===================== */
+/* COMMUNITY SECTION */
+/* ===================== */
+
+.community-section {
+  background: #efefef;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+}
+
+.mountain-bg {
+  position: relative;
+  text-align: center;
+  min-height: 400px;
+
+  /* Use your mountain image */
+  background-image: url("../assets/mountain.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mountain-bg::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 180px;
+
+  width: 180px;
+  height: 180px;
+
+  background: #ff2a2a;
+  border-radius: 50%;
+
+  z-index: 0;
+}
+
+.community-icons {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  padding-top: 120px;
+}
+
+.community-icons button {
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: red;
+  color: white;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+
+.contract-address {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 25px;
+
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+
+  color: black;
+}
+
+.community-text {
+  position: relative;
+  z-index: 2;
+
+  max-width: 700px;
+  margin: 25px auto 0;
+
+  font-size: 15px;
+  line-height: 1.8;
+  color: black;
+}
+
+.tokenomics-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.tokenomics-ninja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tokenomics-ninja img {
+  width: 900px;      /* Large image */
+  max-width: 90%;
+
+  opacity: 0.08;     /* Transparency */
+
+  height: auto;
+}
+
+.about-story {
+  position: relative;
+  overflow: hidden;
+}
+
+.divider-image {
+  position: absolute;
+
+  top: 70%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 800px;      /* Large size */
+  max-width: none;
+
+  opacity: 0.08;      /* Low transparency */
+
+  z-index: 0;
+
+  pointer-events: none;
+}
