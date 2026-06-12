@@ -1,4 +1,4 @@
-import Page from "./page/Page";
+import Page from "./Pge/Page";
 
 function App() {
   return <Page />;
