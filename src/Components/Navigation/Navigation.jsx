@@ -1,22 +1,26 @@
 import "./Navigation.css";
 
-function Navbar() {
+function Navigation() {
   return (
     <nav className="custom-navbar">
       <div className="nav-container">
-        <button className="active-btn">Home</button>
+
+        <a href="#home" className="active-btn">
+          Home
+        </a>
 
         <div className="separator"></div>
 
         <ul className="nav-links">
-          <li><a href="/">About Us</a></li>
-          <li><a href="/">Story</a></li>
-          <li><a href="/">Road Map</a></li>
-          <li><a href="/">Tokenomics</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#roadmap">Road Map</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
         </ul>
+
       </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default Navigation;

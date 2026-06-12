@@ -40,3 +40,16 @@
 .nav-links a:hover {
   color: gold;
 }
+
+.custom-navbar {
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

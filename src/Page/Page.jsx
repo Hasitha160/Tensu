@@ -8,13 +8,17 @@ import pagodaDivider from "../assets/03.png";
 import gateimg from "../assets/04.png";
 import ninja from "../assets/05.png";
 import mount from "../assets/06.png";
+import Arch from "../assets/11.png";
+import Plate from "../assets/12.png";
+import Plate1 from "../assets/12.png";
+import Plate2 from "../assets/12.png";
 
 function Page() {
   return (
     <div className="home">
       <Navigation />
 
-      <section className="hero">
+      <section id="home" className="hero">
         <div className="left-content">
           <h1>TETSU</h1>
 
@@ -52,10 +56,10 @@ function Page() {
       </section>
 
       <div className="ticker">
-        $TETSU # $TETSU # $TETSU # $TETSU # $TETSU #
+        $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU #
       </div>
       
-      <section className="about-story">
+      <section id="about" className="about-story">
   <div className="about-section">
     <h2>ABOUT US</h2>
 
@@ -64,7 +68,7 @@ function Page() {
     </p>
   </div>
 
-  <div className="story-section">
+ <div id="story" className="story-section">
     <div className="story-image">
       <img src={ninjaImg2} alt="story ninja" />
     </div>
@@ -85,45 +89,64 @@ function Page() {
     className="divider-image"
   />
 
-  
+  <img
+    src={Arch}
+    alt="Arch"
+    className="arch-image"
+  />
+
+  <img
+    src={Arch}
+    alt="Arch"
+    className="arch-image1"
+  />
+
+
 </div>
   </div>
 </section>
 
 {/* ROADMAP SECTION */}
 
-<section className="roadmap-section">
+<section id="roadmap" className="roadmap-section">
   <div className="roadmap-content">
     <div className="roadmap-left">
 
-      <div className="roadmap-step">
-        <p>
-          Establish the foundation by defining goals,
-          identifying key stakeholders and developing a
-          strategic plan.
-        </p>
-      </div>
+      <div className="roadmap-step1">
+  <p>
+    Establish the foundation by defining goals,
+    identifying key stakeholders, and developing a
+    strategic plan. This phase will focus on research,
+    market analysis, and setting clear objectives.
+  </p>
+</div>
 
-      <div className="roadmap-step">
-        <p>
-          Begin the development phase including product
-          design, prototype creation and implementation.
-        </p>
-      </div>
+<div className="roadmap-step">
+  <p>
+    Begin the development phase, including product
+    design, prototype creation, and initial
+    implementation. Collaborate with key teams to
+    refine the product and ensure functionality.
+  </p>
+</div>
 
-      <div className="roadmap-step">
-        <p>
-          Conduct testing and quality assurance to
-          identify issues and gather user feedback.
-        </p>
-      </div>
+<div className="roadmap-step1">
+  <p>
+    Conduct thorough testing and quality assurance to
+    identify any issues or areas for improvement. Gather
+    user feedback and make necessary adjustments to
+    ensure optimal performance and user experience.
+  </p>
+</div>
 
-      <div className="roadmap-step">
-        <p>
-          Launch the product publicly and focus on
-          marketing, growth and scaling.
-        </p>
-      </div>
+<div className="roadmap-step">
+  <p>
+    Officially launch the product or service to the public,
+    followed by targeted marketing efforts. Focus on
+    building a strong user base, monitoring performance,
+    and scaling the project as it gains traction.
+  </p>
+</div>
 
     </div>
 
@@ -141,7 +164,7 @@ function Page() {
 
 {/* TOKENOMICS */}
 
-<section className="tokenomics-section">
+<section id="tokenomics" className="tokenomics-section">
 
   <h2>TOKENOMICS</h2>
 
@@ -154,28 +177,38 @@ function Page() {
       />
     </div>
 
+    <div className="Plate-image">
+      <img
+        src={Plate}
+        alt="Plate"
+      />
+    </div>
+
+    <div className="Plate-image1">
+      <img
+        src={Plate1}
+        alt="Plate"
+      />
+    </div>
+
+     <div className="Plate-image2">
+      <img
+        src={Plate2}
+        alt="Plate"
+      />
+    </div>
+
+
+
     <div className="tokenomics-cards">
 
-      <div className="token-card">
-        <h3>Buy / Sell Tax</h3>
-        <span>0%</span>
-      </div>
-
-      <div className="token-card">
-        <h3>Buy / Sell Tax</h3>
-        <span>0%</span>
-      </div>
-
-      <div className="token-card">
-        <h3>Buy / Sell Tax</h3>
-        <span>0%</span>
-      </div>
+      
 
     </div>
 
   </div>
    <div className="ticker">
-        $TETSU # $TETSU # $TETSU # $TETSU # $TETSU #
+        $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU # $TETSU #
       </div>
 
 </section>
