@@ -1,6 +1,6 @@
 import "./Page.css";
-import Navigation from "../components/Navigation/Navigation";
-import Footer from "../components/Footer/Footer";
+import Navigation from "../Component/Navigation/Navigation";
+import Footer from "../Component/Footer/Footer";
 import ninjaImg from "../assets/ninja.png";
 import swordImg from "../assets/01.png";
 import ninjaImg2 from "../assets/02.png";
